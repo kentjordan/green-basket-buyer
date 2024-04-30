@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -8,9 +8,11 @@ const Navbar = () => {
       <div className='flex flex-row gap-4 items-center'>
         <span>Contact</span>
         <span>About</span>
-        <span className='bg-green-700 px-2 py-1 rounded text-white font-bold'>
+        <Link
+          href='/login'
+          className='bg-green-700 px-2 py-1 rounded text-white font-bold'>
           Login
-        </span>
+        </Link>
       </div>
     </div>
   );
