@@ -37,9 +37,11 @@ const SignupPage = () => {
               placeholder='Verify Password'
               className='p-3 border rounded text-sm'
             />
-            <button className='bg-green-800 text-white p-2 rounded font-bold mt-4'>
+            <Link
+              className='bg-green-800 text-white p-2 rounded font-bold mt-4 text-center'
+              href={"/"}>
               Signup
-            </button>
+            </Link>
             <div className='flex gap-x-2 flex-wrap'>
               <p>Have got an account?</p>
               <Link href='/login' className='font-bold'>

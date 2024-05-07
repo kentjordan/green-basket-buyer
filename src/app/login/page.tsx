@@ -22,9 +22,11 @@ const LoginPage = () => {
               placeholder='Password'
               className='p-3 border rounded text-sm'
             />
-            <button className='bg-green-700 text-white p-2 rounded font-bold mt-4'>
+            <Link
+              href={"/"}
+              className='bg-green-700 text-white p-2 rounded font-bold mt-4 text-center'>
               Login
-            </button>
+            </Link>
             <div className='flex gap-x-2 flex-wrap'>
               <p>Don't have an account? </p>
               <Link href='/signup' className='font-bold'>
