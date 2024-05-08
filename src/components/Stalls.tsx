@@ -13,6 +13,7 @@ const Stalls = () => {
         <div className='flex gap-4 flex-wrap sm:justify-start justify-center'>
           {getStores().map((item) => (
             <StallTile
+              key={item.id}
               category={item.category}
               id={item.id}
               summary={item.summary}

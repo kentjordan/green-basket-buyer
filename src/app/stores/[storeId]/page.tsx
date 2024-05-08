@@ -61,6 +61,7 @@ const StorePage = ({ params }: StorePageProps) => {
               {activeStore &&
                 activeStore.best_items.map((item) => (
                   <StoreTile
+                    key={item.id}
                     id={item.id}
                     name={item.name}
                     price={item.price}
@@ -75,6 +76,7 @@ const StorePage = ({ params }: StorePageProps) => {
               {activeStore &&
                 activeStore.regular_items.map((item) => (
                   <StoreTile
+                    key={item.id}
                     id={item.id}
                     name={item.name}
                     price={item.price}

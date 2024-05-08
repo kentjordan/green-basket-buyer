@@ -28,7 +28,7 @@ const LoginPage = () => {
               Login
             </Link>
             <div className='flex gap-x-2 flex-wrap'>
-              <p>Don't have an account? </p>
+              <p>Don&apos;t have an account? </p>
               <Link href='/signup' className='font-bold'>
                 Register here.
               </Link>
