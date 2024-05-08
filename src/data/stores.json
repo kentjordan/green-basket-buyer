@@ -1,0 +1,48 @@
+[
+  {
+    "id": "S-0001",
+    "name": "Coffee Guys",
+    "category": "Coffee",
+    "summary": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur incidunt adipisci itaque.",
+    "best_items": [
+      {
+        "id": "1",
+        "name": "Iced Coffee",
+        "variation": "Caramel Machiato",
+        "price": 79
+      },
+      {
+        "id": "2",
+        "name": "Iced Coffee",
+        "variation": "Latte",
+        "price": 69
+      },
+      {
+        "id": "3",
+        "name": "Iced Coffee",
+        "variation": "French Vanilla",
+        "price": 89
+      }
+    ],
+    "regular_items": [
+      {
+        "id": "4",
+        "name": "Iced Coffee",
+        "variation": "American",
+        "price": 59
+      },
+      {
+        "id": "5",
+        "name": "Iced Coffee",
+        "variation": "Variation A",
+        "price": 109
+      },
+      {
+        "id": "6",
+        "name": "Iced Coffee",
+        "variation": "Variation B",
+        "price": 99
+      }
+    ]
+  }
+]

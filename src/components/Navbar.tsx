@@ -3,7 +3,9 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div className='w-full flex-row items-center justify-around p-3 text-sm absolute z-50 text-white sm:flex hidden'>
-      <h1>Green Basket</h1>
+      <Link href='/' className='font-medium'>
+        Green Basket
+      </Link>
       {/* Menu */}
       <div className='flex flex-row gap-4 items-center'>
         <span>Contact</span>
