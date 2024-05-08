@@ -18,7 +18,7 @@ const Cart = () => {
   };
 
   return (
-    <div className='fixed z-50 h-screen'>
+    <div className='fixed z-40 h-screen'>
       <div
         className='h-12 w-12 bg-green-700 rounded-full flex items-center justify-center m-4 cursor-pointer shadow-md bottom-0 right-0 fixed'
         onClick={() => setIsCartItemVisible(!isCartItemVisible)}>

@@ -21,13 +21,15 @@ const AddToCartDialog = () => {
   const onCancel = () => dispatch(toggleAddToCartDialog());
 
   return (
-    <div className='bg-black/50 h-full w-full fixed z-10 flex items-center justify-center'>
-      <div className='bg-white border p-3 rounded h-auto flex flex-col m-2'>
+    <div className='bg-black/50 h-full w-full fixed z-50 flex items-center justify-center'>
+      <div className='bg-white border p-3 rounded h-full w-full sm:h-auto sm:w-96 flex flex-col'>
         <h1 className='font-bold mb-4 text-lg border-b pb-2'>
           Add this item into your cart?
         </h1>
         <div className='flex flex-col justify-center items-center'>
+          {/* Image */}
           <div className='bg-stone-300 h-40 w-40 rounded'></div>
+          {/* Details */}
           <div className='flex justify-center items-center flex-col my-4'>
             <h1 className='font-bold'>{activeAddToCartItem?.name}</h1>
             <p className='text-sm text-stone-500'>
@@ -37,6 +39,7 @@ const AddToCartDialog = () => {
               P{activeAddToCartItem?.price}
             </p>
           </div>
+          {/* Add to cart and Cancel buttons */}
           <div className='flex flex-col mt-3 gap-2 w-full'>
             <button
               onClick={onAddToCart}
