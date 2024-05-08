@@ -12,6 +12,8 @@ const AddToCartDialog = () => {
   const onAddToCart = () => {
     if (activeAddToCartItem) {
       dispatch(addToCart(activeAddToCartItem));
+      alert(`${activeAddToCartItem.name} has been added to the cart!`);
+      dispatch(toggleAddToCartDialog());
     }
   };
   const onCancel = () => dispatch(toggleAddToCartDialog());
