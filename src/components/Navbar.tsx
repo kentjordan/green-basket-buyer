@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className='w-full flex-row items-center justify-around p-3 text-sm absolute z-50 text-white sm:flex hidden'>
+    <div className='w-full flex-row items-center justify-around p-3 text-sm absolute z-30 text-white sm:flex hidden'>
       <Link href='/' className='font-medium'>
         Green Basket
       </Link>
