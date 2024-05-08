@@ -12,7 +12,9 @@ const AddToCartDialog = () => {
   const onAddToCart = () => {
     if (activeAddToCartItem) {
       dispatch(addToCart(activeAddToCartItem));
-      alert(`${activeAddToCartItem.name} has been added to the cart!`);
+      alert(
+        `${activeAddToCartItem.name} - ${activeAddToCartItem.variation} has been added to the cart!`
+      );
       dispatch(toggleAddToCartDialog());
     }
   };
