@@ -41,7 +41,7 @@ const CheckoutPage = () => {
         <div className='border rounded my-3 p-2'>
           <h1 className='font-bold mb-2'>Order summary</h1>
           {cartItems.map((item) => (
-            <div className='flex justify-between'>
+            <div key={item.id} className='flex justify-between'>
               <p>
                 <b>{item.qty}x</b> - {item.name} - {item.variation}
               </p>
