@@ -36,7 +36,7 @@ const StorePage = ({ params }: StorePageProps) => {
   );
 
   return (
-    <div className='flex flex-col h-screen items-center'>
+    <div  >
       <Navbar />
       {addToCartDialogVisibility && <AddToCartDialog />}
       {activeStore ? (

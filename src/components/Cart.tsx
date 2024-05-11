@@ -4,10 +4,13 @@ import CartItem from "./CartItem";
 import { useSelector } from "react-redux";
 import { IRootState } from "@/redux/store";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const Cart = () => {
   const [isCartItemVisible, setIsCartItemVisible] = useState(false);
   const { cartItems } = useSelector((state: IRootState) => state.cart);
+
+  const router = useRouter();
 
   const getGrandTotal = () => {
     let grandTotal = 0;
@@ -15,6 +18,10 @@ const Cart = () => {
       grandTotal += cartItems[i].qty * cartItems[i].price;
     }
     return grandTotal;
+  };
+
+  const onCheckOut = () => {
+    router.push("/checkout");
   };
 
   return (
@@ -63,7 +70,9 @@ const Cart = () => {
                 ₱ {getGrandTotal()}
               </h1>
             </div>
-            <button className='bg-green-700 w-full text-sm p-2 rounded text-white font-bold'>
+            <button
+              onClick={onCheckOut}
+              className='bg-green-700 w-full text-sm p-2 rounded text-white font-bold'>
               Check out
             </button>
           </div>
