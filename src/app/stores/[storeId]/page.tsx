@@ -36,7 +36,7 @@ const StorePage = ({ params }: StorePageProps) => {
   );
 
   return (
-    <div  >
+    <div>
       <Navbar />
       {addToCartDialogVisibility && <AddToCartDialog />}
       {activeStore ? (
@@ -87,7 +87,7 @@ const StorePage = ({ params }: StorePageProps) => {
           </div>
         </>
       ) : (
-        <div className='h-full w-full flex flex-col items-center justify-center'>
+        <div className='min-h-screen min-w-screen flex flex-col items-center justify-center z-50'>
           <PulseLoader size={16} />
           <h1 className='mt-2'>LOADING</h1>
         </div>
