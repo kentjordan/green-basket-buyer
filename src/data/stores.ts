@@ -59,42 +59,41 @@ const getStores = () => {
             "best_items": [
                 {
                     "id": "1",
-                    "name": "Iced Coffee",
-                    "variation": "Caramel Machiato",
-                    "price": 79
+                    "name": "Roasted Chicken",
+                    "variation": "Hot and Spicy",
+                    "price": 150
                 },
                 {
                     "id": "2",
-                    "name": "Iced Coffee",
-                    "variation": "Latte",
-                    "price": 69
-                },
-                {
-                    "id": "3",
-                    "name": "Iced Coffee",
-                    "variation": "French Vanilla",
+                    "name": "Pork Sisig",
+                    "variation": "UNLI RICE & SOUP",
                     "price": 89
+                }, {
+                    "id": "3",
+                    "name": "Roasted Liempo",
+                    "variation": "UNLI RICE & SOUP",
+                    "price": 145
                 }
             ],
             "regular_items": [
                 {
                     "id": "4",
-                    "name": "Iced Coffee",
-                    "variation": "American",
-                    "price": 59
+                    "name": "Roasted Chicken",
+                    "variation": "Pepper Roast",
+                    "price": 150
                 },
                 {
                     "id": "5",
-                    "name": "Iced Coffee",
-                    "variation": "Variation A",
-                    "price": 109
+                    "name": "2-pc Fried Chicken",
+                    "variation": "UNLI RICE & SOUP",
+                    "price": 153
                 },
                 {
                     "id": "6",
-                    "name": "Iced Coffee",
-                    "variation": "Variation B",
-                    "price": 99
-                }
+                    "name": "2-pc Pork BBQ",
+                    "variation": "UNLI RICE & SOUP",
+                    "price": 150
+                },
             ]
         }
     ]
