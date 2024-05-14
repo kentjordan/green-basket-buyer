@@ -8,8 +8,8 @@ const Navbar = () => {
       </Link>
       {/* Menu */}
       <div className='flex flex-row gap-4 items-center'>
-        <span>Contact</span>
-        <span>About</span>
+        {/* <span>Contact</span>
+        <span>About</span> */}
         <Link
           href='/login'
           className='bg-green-700 px-2 py-1 rounded text-white font-bold'>
