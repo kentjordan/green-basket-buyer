@@ -21,8 +21,8 @@ const PlaceOrderPage = () => {
           <div className='flex justify-center items-center flex-col'>
             <Image src={OrderDelivery} alt='' width={128} height={128} />
             <h1 className='text-center my-4 text-stone-500'>
-              Preparing your food. Your deliver man will pick it up once it's
-              ready.
+              Preparing your food. Your deliver man will pick it up once
+              it&apos;s ready.
             </h1>
           </div>
           <div>
