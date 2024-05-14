@@ -1,10 +1,17 @@
 "use client";
 import { IRootState } from "@/redux/store";
 import getCartGrandTotal from "@/utils/getCartGrandTotal";
+import { useRouter } from "next/navigation";
 import { useSelector } from "react-redux";
 
 const CheckoutPage = () => {
   const { cartItems } = useSelector((state: IRootState) => state.cart);
+
+  const router = useRouter();
+
+  const onPlaceOrder = async () => {
+    router.push("/place-order");
+  };
 
   return (
     <div className='flex flex-col min-h-screen items-center'>
@@ -48,6 +55,9 @@ const CheckoutPage = () => {
               <p>₱{item.price}</p>
             </div>
           ))}
+          <p className='w-full text-end font-bold mt-2'>
+            Total: ₱{getCartGrandTotal(cartItems)}
+          </p>
         </div>
         <div className='border rounded my-3 p-2'>
           <h1 className='font-bold mb-2'>Contact</h1>
@@ -64,7 +74,9 @@ const CheckoutPage = () => {
             <p>₱{getCartGrandTotal(cartItems)}</p>
           </div>
         </div>
-        <button className='border w-full rounded my-1 p-2 bg-green-700'>
+        <button
+          onClick={onPlaceOrder}
+          className='border w-full rounded my-1 p-2 bg-green-700'>
           <h1 className='font-bold text-white'>Place Order</h1>
         </button>
       </div>
