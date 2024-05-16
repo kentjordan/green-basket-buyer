@@ -3,8 +3,10 @@ import Link from "next/link";
 const SignupPage = () => {
   return (
     <div className='h-screen w-full flex'>
-      <div className='bg-green-700 md:flex-[0.5] md:flex hidden items-center justify-center'>
-        <h1 className='text-4xl text-white font-bold'>Signup</h1>
+      <div className='md:flex-[0.5] md:flex hidden items-center justify-center'>
+        <h1 className='text-4xl text-green-700 font-bold mx-4'>
+          Signup to Green Basket
+        </h1>
       </div>
       <div className='flex-1 flex flex-col items-center justify-center'>
         <div className='w-full max-w-[600px] p-2 rounded'>

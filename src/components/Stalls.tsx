@@ -7,9 +7,7 @@ const Stalls = () => {
   return (
     <div className='mt-4 flex flex-col items-center'>
       <div className='mt-2 mb-4 flex flex-col justify-center max-w-[900px] mx-2'>
-        <p className='text-xl font-bold h-fit border-b border-b-stone-300 mb-8'>
-          Stingers
-        </p>
+        <p className='text-xl font-bold h-fit mb-6'>Stingers</p>
         <div className='flex gap-4 flex-wrap sm:justify-start justify-center'>
           {getStores().map((item) => (
             <StallTile
