@@ -19,7 +19,7 @@ const AboutUsPage = () => {
           <div className='flex-1 h-full basis-64'>
             <h1 className='font-bold text-2xl mb-4'>About us</h1>
             <p className='text-stone-500'>
-              Green Basket is your on-campus food delivery solution. We're
+              Green Basket is your on-campus food delivery solution. We&apos;re
               dedicated to providing convenient, tasty meals right to your
               location within the school. With a focus on quality, variety, and
               exceptional service, Green Basket makes satisfying your cravings
@@ -54,11 +54,12 @@ const AboutUsPage = () => {
             <h1 className='font-bold text-2xl mb-4'>Our Values</h1>
             <p className='text-stone-500'>
               At Green Basket, we believe in convenience, quality, and
-              community. We're committed to delivering more than just food –
-              we're delivering an experience. Our values drive everything we do,
-              from selecting the freshest ingredients to providing exceptional
-              customer service. Join us as we strive to make your school
-              experience even more enjoyable, one delicious meal at a time.
+              community. We&apos;re committed to delivering more than just food
+              – we&apos;re delivering an experience. Our values drive everything
+              we do, from selecting the freshest ingredients to providing
+              exceptional customer service. Join us as we strive to make your
+              school experience even more enjoyable, one delicious meal at a
+              time.
             </p>
           </div>
         </div>
