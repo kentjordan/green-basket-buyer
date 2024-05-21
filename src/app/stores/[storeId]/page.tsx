@@ -64,6 +64,7 @@ const StorePage = ({ params }: StorePageProps) => {
                     key={item.id}
                     id={item.id}
                     name={item.name}
+                    img={item.img}
                     price={item.price}
                     variation={item.variation}
                   />
@@ -79,6 +80,7 @@ const StorePage = ({ params }: StorePageProps) => {
                     key={item.id}
                     id={item.id}
                     name={item.name}
+                    img={item.img}
                     price={item.price}
                     variation={item.variation}
                   />

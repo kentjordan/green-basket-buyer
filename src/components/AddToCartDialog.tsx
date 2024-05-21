@@ -1,6 +1,7 @@
 import { toggleAddToCartDialog, addToCart } from "@/redux/cart/cart.slice";
 import { IRootState } from "@/redux/store";
 import { useDispatch, useSelector } from "react-redux";
+import Image from "next/image";
 
 const AddToCartDialog = () => {
   const { activeAddToCartItem } = useSelector(
@@ -28,7 +29,15 @@ const AddToCartDialog = () => {
         </h1>
         <div className='flex flex-col justify-center items-center'>
           {/* Image */}
-          <div className='bg-stone-300 h-40 w-40 rounded'></div>
+          {activeAddToCartItem?.img ? (
+            <Image
+              src={activeAddToCartItem?.img}
+              alt=''
+              className='p-4 w-full h-full'
+            />
+          ) : (
+            <div className='bg-stone-300 h-40 w-40 rounded'></div>
+          )}
           {/* Details */}
           <div className='flex justify-center items-center flex-col my-4'>
             <h1 className='font-bold'>{activeAddToCartItem?.name}</h1>

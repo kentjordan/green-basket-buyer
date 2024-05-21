@@ -6,6 +6,7 @@ export interface CartItem {
     name: string,
     variation: string,
     price: number
+    img: string
 }
 
 interface CartInitialState {

@@ -2,6 +2,7 @@ import { MdDeleteOutline } from "react-icons/md";
 import { IoAdd, IoRemove } from "react-icons/io5";
 import { useDispatch } from "react-redux";
 import { updateItemQty } from "@/redux/cart/cart.slice";
+import Image from "next/image";
 
 interface ICartItem {
   id: string;
@@ -9,8 +10,9 @@ interface ICartItem {
   name: string;
   variation: string;
   price: number;
+  img: string;
 }
-const CartItem = ({ id, name, price, qty, variation }: ICartItem) => {
+const CartItem = ({ id, name, img, price, qty, variation }: ICartItem) => {
   const dispatch = useDispatch();
 
   const onItemAddQty = () =>
@@ -18,6 +20,7 @@ const CartItem = ({ id, name, price, qty, variation }: ICartItem) => {
       updateItemQty({
         id,
         name,
+        img,
         price,
         qty,
         variation,
@@ -29,6 +32,7 @@ const CartItem = ({ id, name, price, qty, variation }: ICartItem) => {
     dispatch(
       updateItemQty({
         id,
+        img,
         name,
         price,
         qty,
@@ -42,6 +46,7 @@ const CartItem = ({ id, name, price, qty, variation }: ICartItem) => {
       updateItemQty({
         id,
         name,
+        img,
         price,
         qty,
         variation,
@@ -53,7 +58,9 @@ const CartItem = ({ id, name, price, qty, variation }: ICartItem) => {
   return (
     <div className='border p-2 rounded flex justify-between'>
       <div className='flex gap-2 '>
-        <div className='bg-stone-300 w-20 h-20 rounded'></div>
+        <div className='bg-stone-300 w-20 h-20 rounded'>
+          <Image src={img} alt='' className='p-4 w-full h-full' />
+        </div>
         <div>
           <h1 className='text-base font-medium'>{name}</h1>
           <p className='text-sm text-stone-400'>{variation}</p>
